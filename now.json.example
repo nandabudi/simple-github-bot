@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "name": "github-bot",
+  "public": true,
+  "builds": [
+    {
+      "src": "index.rs",
+      "use": "@now/rust"
+    }
+  ],
+  "env": {
+    "BOT_TOKEN": "TELEGRAM BOT TOKEN",
+    "CHAT_ID": "TELEGRAM CHAT ID"
+  }
+}

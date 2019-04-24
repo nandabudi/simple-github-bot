@@ -1,0 +1,15 @@
+[package]
+name = "nyaa-scraper"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+http = "0.1"
+lambda_runtime = "*"
+url = "*"
+reqwest = "*"
+serde_json = "*"
+
+[[bin]]
+name = "index"
+path = "index.rs"
