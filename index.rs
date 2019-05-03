@@ -7,7 +7,7 @@ use url::Url;
 
 fn handler(request: Request<String>) -> http::Result<Response<String>> {
     let method = request.method();
-
+    // comment dari nanda
     if method.as_str() == "POST" {
         let body: String = request.into_body();
         let data: Value = serde_json::from_str(&body).unwrap();
